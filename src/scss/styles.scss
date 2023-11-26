@@ -1,0 +1,266 @@
+@font-face {
+    font-family: Cygre ExtraBold;
+    src: url(../fonts/Cygre-ExtraBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Cygre Medium;
+    src: url(../fonts/Cygre-Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Cygre;
+    src: url(../fonts/Cygre-Regular.woff2) format('woff2');
+}
+
+$large-screen: 1440px;
+$medium-screen: 990px;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.content-centered {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.content-width {
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-sides-padding {
+    padding-left: 146px;
+    @media screen and (max-width: $large-screen) {
+        padding-left: 40px;
+    }
+}
+
+.background {
+    background: linear-gradient(180deg, #383F52 0%, #111621 100%);
+}
+
+.header {
+    color: #fff;
+    margin-top: 80px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $medium-screen) {
+        margin-top: 37px;
+    }
+}
+
+.header-logo {
+    width: 297px;
+    height: 58px;
+    @media screen and (max-width: $medium-screen) {
+        width: 174px;
+        height: 34px;
+    }
+}
+
+.header-title {
+    font-size: 70px;
+    width: 800px;
+    margin-top: 80px;
+    font-family: Cygre ExtraBold;
+    @media screen and (max-width: $medium-screen) {
+        font-size: 30px;
+        margin-top: 40px;
+        width: 340px;
+    }
+}
+
+.clouds {
+    background-image: url(../images/clouds.svg);
+    height: 447px;
+    width: 100%;
+    background-repeat: repeat-x;
+    display: flex;
+    
+
+    @media screen and (max-width: $medium-screen) {
+        background-size: contain;
+        box-sizing: border-box;
+        background-position: bottom;
+        width: 112%;
+        height: 250px;
+        margin-left: -10%;
+    }
+}
+
+.clouds-wrapper {
+    width: 100%;
+    height: 447px;
+    margin-top: -210px;
+    margin-bottom: -5px;
+
+    @media screen and (max-width: $medium-screen) {
+        height: 250px;
+        margin-top: -150px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.main-block {
+    color: #3E3E3E;
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 60px;
+    @media screen and (max-width: $medium-screen) {
+        padding-bottom: 30px;
+    }
+}
+
+.main-block-section {
+    margin-top: 80px;
+    @media screen and (max-width: $medium-screen) {
+        margin-top: 40px;
+    }
+}
+
+.main-block-mini-section {
+    width: 500px;
+    display: inline-block;
+    margin-right: 80px;
+    @media screen and (max-width: $medium-screen) {
+        margin-right: 40px;
+        width: 250px;
+    }
+}
+
+.main-block-section-title {
+    font-family: Cygre Medium;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 65px;
+    text-align: left;
+    display: flex;
+
+    @media screen and (max-width: $medium-screen) {
+        font-size: 20px;
+        line-height: 33px;
+    }
+}
+
+.main-block-section-title-number {
+    margin-right: .30em;
+}
+
+.main-block-section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 261px;
+    height: 65.67px;
+    border-radius: 141.45px;
+    border: 2px #303748 solid;
+    text-decoration: none;
+    color: #3E3E3E;
+    margin-top: 30px;
+
+    @media screen and (max-width: $medium-screen) {
+        width: 155px;
+        height: 39px;
+    }
+}
+
+.main-block-section-button-icon {
+    margin-right: 8px;
+
+    @media screen and (max-width: $medium-screen) {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.main-block-section-button-text {
+    font-family: Cygre;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 43px;
+
+    @media screen and (max-width: $medium-screen) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.main-block-section-video {
+    border-radius: 17px;
+    display: inline-block;
+    overflow: clip;
+    margin-top: 30px;
+    @media screen and (max-width: $medium-screen) {
+        width: calc(100% - 40px);
+        aspect-ratio: 16/10;
+    }
+}
+
+.main-block-section-video-frame {
+    width: 1116px;
+    height: 566px;
+    @media screen and (max-width: $large-screen) {
+        width: 900px;
+        height: 450px;
+    }
+    @media screen and (max-width: $medium-screen) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.footer {
+    background: #323232;
+    font-family: Cygre;
+    color: #fff;
+    font-size: 40px;
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    margin-top: -5px;
+
+    @media screen and (max-width: $medium-screen) {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+}
+
+.footer-contact {
+    margin-bottom: 25px;
+
+    @media screen and (max-width: $medium-screen) {
+        margin-bottom: 13px;
+    }
+}
+
+.footer-contact_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-site_link {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: inline-block;
+
+    @media screen and (max-width: $medium-screen) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.footer-site_link-wrapper {
+    text-align: center;
+    width: 100%;
+}
